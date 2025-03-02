@@ -24,6 +24,7 @@
     <ProjectGuid>{8016bb79-b504-4161-b44f-271a8dcdbb52}</ProjectGuid>
     <RootNamespace>tactvisualiser</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BeatToWAV</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

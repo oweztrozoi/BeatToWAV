@@ -34,6 +34,10 @@ The program will generate:
 
 fork.
 
+## Acknowledgments
+
+Special thanks to my buddy ChatGPT o3 mini for knowing how to write a .wav file.
+
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.

@@ -1,5 +1,5 @@
 # BeatToWAV
-**BeatToWAV** is a simple C++ application that records rhythmic beats (via user clicks) in real time and generates corresponding WAV files with click sounds placed at each beat. These WAV files can be used in video editing software to sync video to music or simply to visualize rhythmic patterns.
+**BeatToWAV** is a simple C++ application that records rhythmic beats (via user clicks) in real time and generates corresponding WAV files with click sounds placed at each beat. These WAV files can be used in video editing software to sync video to music or simply to visualize rhythmic patterns. It was made with AMVs and movie edits in mind.
 
 How the generated .wav looks like in Premiere Pro:
 ![screenshot](grafik.png)

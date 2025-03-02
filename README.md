@@ -29,6 +29,7 @@ The program will generate:
     A base WAV file (output_1.wav) with 189 beats in length.
     An additional WAV file (output_2.wav) will be created with each beat subdivided into two sub-beats.
 
+Note: WAV files will be created in the same location as BeatToWAV.exe.
 
 ## Contributing
 

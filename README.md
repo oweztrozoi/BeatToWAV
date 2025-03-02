@@ -32,7 +32,7 @@ The program will generate:
 
 ## Contributing
 
-fork.
+I'm not that good at c++, so you might wanna fork.
 
 ## Acknowledgments
 

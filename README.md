@@ -21,7 +21,7 @@ When you run BeatToWAV, you'll see a welcome message explaining the process.
 
 After recording or entering BPM, if you input:
 
-    Base beats: 189
+    Beats: 189
     Additional sub-beats per beat: 2
 
 The program will generate:

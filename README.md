@@ -31,10 +31,6 @@ The program will generate:
 
 Note: WAV files will be created in the same location as BeatToWAV.exe.
 
-## Contributing
-
-I'm not that good at c++, so you might wanna fork.
-
 ## Acknowledgments
 
 Special thanks to my buddy ChatGPT o3 mini for knowing how to write a .wav file.

@@ -122,10 +122,6 @@ void generateWAVs(int clicks, double time) {
 }
 
 
-void useBPM() {
-
-}
-
 
 void clickRecorder() {
     std::cout << "\033[1;33m"

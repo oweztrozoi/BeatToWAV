@@ -97,7 +97,7 @@ void generateWAV(int clicks, double time, int baseBeats, int subBeatFactor = 1) 
 
 void generateWAVs(int clicks, double time) {
     // Prompt for base beats in cyan.
-    std::cout << "\033[1;36m\nHow many beats do you want the base file to include? \033[0m" << std::endl;
+    std::cout << "\033[1;36m\nHow many beats do you want the WAV to include (p.e.: 4 will result in a WAV that is 4 beats long)? \033[0m" << std::endl;
     int baseBeats;
     std::cin >> baseBeats;
 
@@ -122,10 +122,18 @@ void generateWAVs(int clicks, double time) {
 }
 
 
+void useBPM() {
+    system("cls");
+    std::cout << "\033[1;36mPlease enter your desired BPM: \033[0m" << std::endl;
+    int bpm;
+    std::cin >> bpm;
+    generateWAVs(bpm, 60);
+}
+
 
 void clickRecorder() {
     std::cout << "\033[1;33m"
-        << "Press [SPACE] to start recording. Press any other key to stop recording (has to be on-beat).\n"
+        << "Press [SPACE] to start recording. Press any other key to stop recording (has to be on-beat).\nPress [m] to manually enter BPM."
         << "\033[0m" << std::endl;
 
     // Start click detection
@@ -136,6 +144,10 @@ void clickRecorder() {
         std::this_thread::sleep_for(std::chrono::milliseconds(20));
         system("cls");
     }
+    else if (key == 'm') {
+        useBPM();
+        return;
+    }
     else {
         system("cls");
         clickRecorder();
@@ -144,7 +156,7 @@ void clickRecorder() {
     // Record first click time
     auto start = std::chrono::steady_clock::now();
 
-    // Record clicks
+    // Record first click time if SPACE pressed, if m pressed call useBPM() to enter BPM manually.
     int clicks;
     clicks = 0;
     while (true) {
@@ -190,6 +202,10 @@ void printWelcome() {
         << "-> Listen to the music of your choice. \n"
         << "The Program will record the amount of clicks you do in a certain time "
         << "and then generate a .wav with loud noises at every beat "
+        << "for you to use in video editing software to sync video to music.\n\n" << std::endl;
+
+    std::cout << "-> Alternatively find out the BPM of your music. \n"
+        << "The Program will generate a .wav with loud noises at every beat"
         << "for you to use in video editing software to sync video to music.\n\n"
         << "\033[0m" << std::endl;
 

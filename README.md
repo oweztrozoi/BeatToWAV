@@ -19,7 +19,7 @@ Download the newest release from the releases tab. Double click to open or run v
 
 When you run BeatToWAV, you'll see a welcome message explaining the process.
 
-After recording, if you input:
+After recording or entering BPM, if you input:
 
     Base beats: 189
     Additional sub-beats per beat: 2

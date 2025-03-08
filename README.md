@@ -31,9 +31,6 @@ The program will generate:
 
 Note: WAV files will be created in the same location as BeatToWAV.exe.
 
-## Acknowledgments
-
-Special thanks to my buddy ChatGPT o3 mini for knowing how to write a .wav file.
 
 ## License
 
